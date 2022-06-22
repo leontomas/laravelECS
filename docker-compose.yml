@@ -8,8 +8,8 @@ services:
     container_name: app
     restart: unless-stopped
     environment:
-      DB_HOST: db
-      DB_PASSWORD: root
+      DB_HOST: lct-db.cfd6i4mtkebw.ap-northeast-3.rds.amazonaws.com
+      DB_PASSWORD: password
     volumes:
       - ./:/var/www
       - ./config/php/local.ini:/usr/local/etc/php/conf.d/local.ini
